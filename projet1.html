@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="projet1.css">
+</head>    
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <label class="logo">Select text suite:</label>
+    <br></br>
+    <input list="browsers" value="tribute page">
+    
+    <datalist id="browsers">
+      <option value="tribute page">
+      <option value="tribate page">
+    </datalist>
+    </input>
+        <br></br>
+       <input type="button" onclick="alert('Hello World!')" value="Run test" class="run"></input> 
+    <br></br>
+        <input type="button" onclick="alert('Hello World!')" value="Test" class="T"></input>
+        <br></br>
+        <a href="">Ask For Help</a>
+    <div id="carre1"></div>
+    <div id="carre2"></div>
+    <div id="carre3"></div>
+    <h3>Test(s) failed</h3>
+    <h4>Test passed</h4> 
+    <h5>Test Excecuting</h5>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰ </button>  
+    <h2></h2>
+    <p></p>
+  </div>
+  
+  <script>
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  </script>  
+  <h1>FORMULAIRE D'ENQUETE</h1> 
+  <div class="enquete">
+  <form action="https://www.w3schools.com/action_page.php">
+  
+    Name<br><p></p>
+    <input type="text" name="fname" placeholder="enter your name" class="t">
+    <p></p>
+    <br>
+    Email<br><p></p>
+    <input type="email" name="lname" placeholder="enter your email" class="e">
+    <br><p></p>
+    Age (optional)<br><p></p>
+    <input type="text" name="lname" placeholder="Age" class="a">
+    </form>
+    <br><p></p>
+    Which option best describes your current role?<br><p></p>
+    <select name="pets" id="pet-select" class="p">
+      <option value="">select current role</option>
+      <option value="">Student</option>
+      <option value="">Full Time Job</option>
+      <option value="">Full Time Leaner</option>
+      <option value="">Prefer not to say</option>
+    </select>
+    <br><p></p>
+    Would you recommended freecodecamp to a friend?<br><p></p>
+    <form action="https://www.w3schools.com/action_page.php">
+      <input type="radio" name="gender" value="definitely" checked> Definitely<br>
+      <input type="radio" name="gender" value="maybe"> Maybe<br>
+      <input type="radio" name="gender" value="other"> Not sure<br><br>
+      
+    </form> 
+    <br><p></p>
+    What is your favorite feature of freecodecamp??<br><p></p>
+    <select name="tets" id="tet-select" class="tt">
+      <option value="">select an option</option>
+      <option value="">Challenges</option>
+      <option value="">Projects</option>
+      <option value="">Community</option>
+      <option value="">Open Source</option>
+    </select>
+    <br><p></p>
+    What would you like to see improved?(check all that apply)<br><p></p>
+    <form action="https://www.w3schools.com/action_page.php">
+      <input type="checkbox" name="" value="front">Front-end Projects
+      <br>
+      <input type="checkbox" name="" value="back">Back-end Projects
+      <br>
+        <input type="checkbox" name="" value="data">Data Visualization
+        <br>
+        <input type="checkbox" name="" value="challenges">Challenges
+        <br><br>
+        <form action="https://www.w3schools.com/action_page.php">
+  
+          Any comments or suggestions?<br><p></p>
+          <input type="text" name="fname" placeholder="enter your comment here..." class="comment"><p></p>
+          <input type="submit" value="Submit" class="submit">
+    </div>
+</body>
+</html>
